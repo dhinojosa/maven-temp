@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.vmware</groupId>
+	<artifactId>asimov</artifactId>
+	<version>1.2-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>${project.artifactId}</name>
+	<url>${company-url}</url>
+
+    <description>
+       This is Asimov. We are using it to feel our way through Maven.
+       Some other information of note:
+       
+       JAVA_HOME is ${env.JAVA_HOME}
+       M2_HOME is ${env.M2_HOME}
+       The current operating system is name: ${os.name}
+    </description>
+    
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <company-url>http://www.vmware.com</company-url>
+        <company-name>VM Ware</company-name>
+        <junit-version>4.11</junit-version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit-version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<organization>
+		<name>${company-name}</name>
+		<url>${company-url}</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>dhinojosa</id>
+			<name>Daniel Hinojosa</name>
+			<email>dhinojosa@evolutionnext.com</email>
+			<roles>
+				<role>Benevolent Overload</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>aphagwani</id>
+			<name>Amit Phagwani</name>
+			<email>aphagwani@vmware.com</email>
+			<roles>
+				<role>Commander of the North</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<build>
+		<finalName>${company-name}-${project.artifactId}-${project.version}</finalName>
+	</build>
+</project>
