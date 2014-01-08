@@ -3,3 +3,4 @@ target/
 *.project
 *.ipr
 *.iml
+*.settings

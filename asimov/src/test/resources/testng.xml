@@ -1,12 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite1" verbose="1">
+<suite name="Suite1" verbose="${testng.verbosity}">
 	<test name="TestNG-tests">
 		<packages>
 			<package name="com.vmware.asimov"/>
 		</packages>
 	</test>
-	<test name="JUnit-tests" junit="true">
+	<test name="JUnit-tests" junit="${testng.useJUnit}">
 		<packages>
 			<package name="com.vmware.asimov"/>
 		</packages>
