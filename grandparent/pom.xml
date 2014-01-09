@@ -16,6 +16,13 @@
 
 	<dependencyManagement>
 		<dependencies>
+		    <dependency>
+		        <groupId>com.vmware</groupId>
+		        <artifactId>bom</artifactId>
+		        <version>1.0-SNAPSHOT</version>
+		        <type>pom</type>
+		        <scope>import</scope>
+		    </dependency>
 			<dependency>
 				<groupId>joda-time</groupId>
 				<artifactId>joda-time</artifactId>
